@@ -1,0 +1,70 @@
+# Markov Chain: Weather Prediction (B6)
+## Mathematics Mini Project — ABHIYAN
+
+### 1. Problem Statement
+This project uses a Markov Chain to model three weather states: **Sunny, Cloudy, and Rainy**. Given transition probabilities such as Sunny → Cloudy = 0.3, we construct the transition matrix, find the steady state using the eigenvector corresponding to **eigenvalue 1**, and calculate the weather distribution after **100 days**. We also check whether the long-term result depends on today's weather.
+
+### 2. Mathematical Concept & Model
+- **Core Mathematics:** Eigenvalue = 1, Steady State, A^n Convergence
+- **States:** Sunny, Cloudy, Rainy
+- **Transition Matrix:** Represents the probability of moving between weather states.
+- **Steady State:** πP = π
+- **Eigenvalue Method:** Find the eigenvector corresponding to λ = 1.
+- **Applications:** Weather Prediction, Population Dynamics, Queueing Theory
+
+### 3. Methodology & Algorithm
+1. Define weather states and transition probabilities.
+2. Construct the transition matrix.
+3. Calculate eigenvalues and eigenvectors.
+4. Find the eigenvector corresponding to eigenvalue 1.
+5. Normalize it to obtain the steady-state distribution.
+6. Calculate A^100 for the 100-day weather distribution.
+7. Test different initial weather conditions.
+8. Perform parameter sensitivity analysis.
+9. Generate graphs and output tables.
+
+### 4. Implementation Details
+- **Environment:** Google Colab
+- **Language:** Python
+- **Libraries:** NumPy, Matplotlib
+- **Techniques:** Matrix Power, Eigenvalue/Eigenvector Analysis, Steady-State Analysis
+
+### 5. Results & Discussion
+The project produces the transition matrix, eigenvalues, steady-state probabilities, 100-day weather distribution, convergence graphs, and sensitivity analysis. The results show that the weather distribution approaches a stable steady state over time. For the selected transition matrix, the long-term distribution becomes independent of the initial weather condition.
+
+### 6. Screenshots & Proof of Work
+- **Day 1:** Setup & Colab Implementation
+- **Day 2:** AI-Assisted MVP Output
+- **Day 3:** Custom Analysis & Visualizations
+- **Final:** Mathematical Results, Graphs & GitHub Documentation
+
+### 7. Real-World Impact
+Markov Chain models can be applied to:
+- Weather Prediction
+- Population Dynamics
+- Queueing Theory
+- Service and Reliability Systems
+- Stochastic Decision-Making
+
+### 8. Limitations & Assumptions
+- Transition probabilities remain constant.
+- The model uses only three weather states.
+- The next day's weather depends only on the current state.
+- Real-world weather is more complex than this simplified model.
+
+### 9. Future Scope
+- Real-time Weather API Integration
+- More Weather States and Historical Data
+- Comparison with Actual Weather Observations
+- Interactive Web Dashboard
+- Extension to Population and Queueing Models
+
+### 10. Team Information
+- **Team Name:** B6
+- **Project:** Markov Chain: Weather Prediction
+- **Event:** ABHIYAN
+- **Leader:** [Leader Name & Roll No]
+- **Members:** [Member Names & Roll Nos]
+
+### Project Flow
+**Transition Matrix → Eigenvalue = 1 → Steady State → A^n Convergence → 100-Day Prediction → Sensitivity Analysis**
